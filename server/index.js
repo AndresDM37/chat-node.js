@@ -18,7 +18,7 @@ const io = new Server(server, {
 
 const db = createClient({
   url: 'libsql://sharp-dragon-man-andresdm37.turso.io',
-  authToken: "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTQzMTgxOTUsImlkIjoiMzljN2I0NzMtMjY0ZS00YmM3LTk3ZWQtYTdmMTJiNjgxZDAzIn0.zp0YTApER_M7kBzxys6oKFugdgWeUHgvsd66ibBKJsIxuQAvtL89epUUp7xbi7HrbNH187gu2lkOOYNbFc4uCg"
+  authToken: proccess.env.LIBSQL_AUTH_TOKEN
 })
 
 await db.execute(`
